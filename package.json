@@ -1,0 +1,27 @@
+{
+  "name": "bs1_q4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "browser-sync": "^2.23.6",
+    "browsersync-ssi": "^0.2.4",
+    "css-mqpacker": "^6.0.2",
+    "gulp": "^3.9.1",
+    "gulp-cr-lf-replace": "0.0.4",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-eslint": "^4.0.2",
+    "gulp-htmlhint": "^2.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp.spritesmith": "^6.9.0"
+  }
+}

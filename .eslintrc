@@ -1,0 +1,12 @@
+{
+  "extends": "eslint:recommended",
+  "env": {
+    "browser": true,
+    "jquery": true
+    },
+  "rules": {
+    "no-console": 0, //元々1
+    "no-undef": 1,
+    "no-unused-vars": 1
+  }
+}
