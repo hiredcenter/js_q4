@@ -6,11 +6,111 @@
 /* ----------------------------------------------------------------
 01. CategoryA
 ----------------------------------------------------------------- */
-/* --- DetailA --- */
-/* --- DetailB --- */
+.main {
+padding-top: 30px;
+}
+
+.mainInner {
+margin: 0 auto;
+width: 760px;
+}
+
+.mainTitle {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+/* ----------------------------------------------------------------
+01. CategoryA
+----------------------------------------------------------------- */
+.gNav {
+background-color: #ebe8e8;
+}
+
+.gNavList {
+-webkit-box-pack: justify;
+display: flex;
+display: -ms-flexbox;
+display: -webkit-box;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+
+.gNavListItem {
+font-size: 18px;
+text-align: center;
+width: 200px;
+}
+
+.gNavListItem > a {
+align-items: center;
+-webkit-box-align: center;
+-webkit-box-pack: center;
+color: #666565;
+display: flex;
+display: -webkit-box;
+display: -ms-flexbox;
+-ms-flex-align: center;
+-ms-flex-pack: center;
+justify-content: center;
+padding: 5px 0;
+width: 100%;
+}
+
 /* ----------------------------------------------------------------
 02. CategoryB
 ----------------------------------------------------------------- */
+.tableArea {
+margin-bottom: 20px;
+}
+
+.tableAreaTitle {
+font-size: 16px;
+margin-bottom: 10px;
+}
+
+/* --- table --- */
+.table {
+border-color: #b3b3b3;
+width: 100%;
+}
+
+th {
+background-color: #cbcbcb;
+padding: 3px;
+text-align: center;
+}
+
+td {
+padding: 3px 10px;
+}
+
 /* ----------------------------------------------------------------
 03. CategoryC
 ----------------------------------------------------------------- */
+.accordion {
+border: solid 1px;
+margin-bottom: 20px;
+}
+
+.accordionTitle {
+background-color: #ebe8e8;
+padding: 7px 12px;
+}
+
+.accordionInner {
+padding: 20px;
+}
+
+.accordionInner--menu {
+padding: 12px;
+}
+
+/* --- menuList --- */
+.menuListItem {
+margin-bottom: 4px;
+}
+
+.menuListItem > a {
+color: #666565;
+}

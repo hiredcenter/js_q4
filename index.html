@@ -27,14 +27,17 @@
 <h2 class="mainTitle">jQueryでjsonデータをあつかってみる</h2>
 <div class="tableArea">
 
-<table border="1">
+<table border="1" class="table">
 <caption class="tableAreaTitle">Aグループ</caption>
+<thead>
 <tr>
 <th>ID</th>
 <th>name</th>
 <th>age</th>
 <th>team</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>01</td>
 <td></td>
@@ -65,33 +68,38 @@
 <td></td>
 <td></td>
 </tr>
+</tbody>
 </table>
 <!-- /.tableArea --></div>
-<!-- /.mainInner --></div>
+
 <div class="accordion">
 <h3 class="accordionTitle">group</h3>
 <div class="accordionInner">
-<div class="button"><a href=""></a></div>
-<div class="button"><a href=""></a></div>
-<div class="button"><a href=""></a></div>
-<!-- /.accordionInner --></div.b>
+<div class="buttonArea">
+<div class="button button--A"><a href="#">A</a></div>
+<div class="button button--B"><a href="#">B</a></div>
+<div class="button button--C"><a href="#">C</a></div>
+<!-- /.buttonArea --></div>
+<!-- /.accordionInner --></div>
 <!-- /.accordion --></div>
 
 <div class="accordion">
 <h3 class="accordionTitle">menu</h3>
-<div class="accordionInner">
-<ul class="accordionMenuList">
-<li class="accordionMenuListItem"><a href="#">home</a></li>
-<li class="accordionMenuListItem"><a href="#">news</a></li>
-<li class="accordionMenuListItem"><a href="#">blog</a></li>
-<li class="accordionMenuListItem"><a href="#">contact</a></li>
-<!-- /.accordionMenuList --></ul>
-<!-- /.accordionInner --></div.>
+<div class="accordionInner accordionInner--menu">
+<ul class="menuList">
+<li class="menuListItem"><a href="#">home</a></li>
+<li class="menuListItem"><a href="#">news</a></li>
+<li class="menuListItem"><a href="#">blog</a></li>
+<li class="menuListItem"><a href="#">contact</a></li>
+<!-- /.menuList --></ul>
+<!-- /.accordionInner --></div>
 <!-- /.accordion --></div>
+
+<!-- /.mainInner --></div>
 </main>
 
-<footer>
+<footer class="footer">
 <small class="copyright">copyright 2014 LESSON Q4 Allrightreserved.</small>
-</footer>
+<!-- /.footer --></footer>
 </body>
 </html>

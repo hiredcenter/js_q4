@@ -10,20 +10,105 @@
 01. CategoryA
 ----------------------------------------------------------------- */
 
-/* --- DetailA --- */
+.main {
+padding-top: 30px;
+}
+
+.mainInner {
+margin: 0 auto;
+width: 760px;
+}
+
+.mainTitle {
+font-size: 24px;
+margin-bottom: 20px;
+}
 
 
-/* --- DetailB --- */
+/* ----------------------------------------------------------------
+01. CategoryA
+----------------------------------------------------------------- */
+.gNav {
+background-color: #ebe8e8;
+}
+.gNavList {
+display: flex;
+justify-content: space-between;
+}
+
+.gNavListItem {
+font-size: 18px;
+text-align: center;
+width: 200px;
+}
+
+.gNavListItem > a {
+align-items: center;
+color: #666565;
+display: flex;
+justify-content: center;
+padding: 5px 0;
+width: 100%;
+}
 
 
 /* ----------------------------------------------------------------
 02. CategoryB
 ----------------------------------------------------------------- */
 
+.tableArea {
+margin-bottom: 20px;
+}
+.tableAreaTitle {
+font-size: 16px;
+margin-bottom: 10px;
+}
+
+/* --- table --- */
+.table {
+border-color: #b3b3b3;
+width: 100%;
+}
+tr {
+}
+th {
+background-color: #cbcbcb;
+padding: 3px;
+text-align: center;
+}
+td {
+padding: 3px 10px;
+}
 
 
 /* ----------------------------------------------------------------
 03. CategoryC
 ----------------------------------------------------------------- */
 
+.accordion {
+border: solid 1px ;
+margin-bottom: 20px;
+}
+.accordionTitle {
+background-color: #ebe8e8;
+padding: 7px 12px;
+}
+.accordionInner {
+padding: 20px;
 
+&--menu {
+padding: 12px;
+}
+}
+
+/* --- menuList --- */
+.menuList {
+
+}
+.menuListItem {
+margin-bottom: 4px;
+}
+
+.menuListItem > a {
+color: #666565;
+}
