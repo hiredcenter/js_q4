@@ -28,6 +28,7 @@ margin-bottom: 20px;
 /* ----------------------------------------------------------------
 01. CategoryA
 ----------------------------------------------------------------- */
+
 .gNav {
 background-color: #ebe8e8;
 }
@@ -69,8 +70,8 @@ margin-bottom: 10px;
 border-color: #b3b3b3;
 width: 100%;
 }
-tr {
-}
+// tr {
+// }
 th {
 background-color: #cbcbcb;
 padding: 3px;
@@ -102,13 +103,11 @@ padding: 12px;
 }
 
 /* --- menuList --- */
-.menuList {
-
-}
+// .menuList {
+// }
 .menuListItem {
 margin-bottom: 4px;
 }
-
 .menuListItem > a {
 color: #666565;
 }
