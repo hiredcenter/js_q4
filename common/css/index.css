@@ -64,7 +64,7 @@ width: 100%;
 margin-bottom: 20px;
 }
 
-.tableAreaTitle {
+.tableTitle {
 font-size: 16px;
 margin-bottom: 10px;
 }
@@ -113,4 +113,15 @@ margin-bottom: 4px;
 
 .menuListItem > a {
 color: #666565;
+}
+
+/* ----------------------------------------------------------------
+03. CategoryC
+----------------------------------------------------------------- */
+.tableText.isHidden {
+display: none;
+}
+
+.tr.isHidden {
+display: none;
 }
