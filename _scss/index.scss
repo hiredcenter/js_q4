@@ -7,7 +7,7 @@
 ----------------------------------------------------------------- */
 
 /* ----------------------------------------------------------------
-01. CategoryA
+01. Main
 ----------------------------------------------------------------- */
 
 .main {
@@ -26,7 +26,7 @@ margin-bottom: 20px;
 
 
 /* ----------------------------------------------------------------
-01. CategoryA
+01. Global Navigation
 ----------------------------------------------------------------- */
 
 .gNav {
@@ -54,25 +54,23 @@ width: 100%;
 
 
 /* ----------------------------------------------------------------
-02. CategoryB
+02. Table
 ----------------------------------------------------------------- */
 
-.tableArea {
+.tblWrapper {
 margin-bottom: 20px;
 }
-.tableTitle {
+.tblTitle {
 font-size: 16px;
 margin-bottom: 10px;
 }
 
 /* --- table --- */
-.table {
+.tbl {
 border-color: #b3b3b3;
 width: 100%;
 }
-// tr {
-// }
-th {
+.trHead > th {
 background-color: #cbcbcb;
 padding: 3px;
 text-align: center;
@@ -81,25 +79,69 @@ td {
 padding: 3px 10px;
 }
 
+//tbl初期設定
+.tblText.isHidden {
+display: none;
+}
+.tr.isHidden {
+display: none;
+}
+
 
 /* ----------------------------------------------------------------
-03. CategoryC
+03. Accordion
 ----------------------------------------------------------------- */
 
-.accordion {
+.acd {
 border: solid 1px ;
 margin-bottom: 20px;
+position: relative; //▼の配置用に指定
 }
-.accordionTitle {
+
+.acdLabel {
+cursor: pointer;
+display: block; //チェックボックスのクリック範囲拡大
 background-color: #ebe8e8;
 padding: 7px 12px;
 }
-.accordionInner {
-padding: 20px;
 
+.acdIcon {
+border: 13px solid transparent;
+border-bottom: 15px solid #b3b3b3;
+display: block;
+height: 0;
+position: absolute;
+right: 10px;
+top: 0;
+width: 0;
+}
+
+.acdCheck {
+display: none;
+}
+
+//クリック時に▼の向きを変える
+.acdCheck:checked + .acdIcon {
+top: 12px;
+transform: rotateX(180deg);
+}
+//クリック時に中身を非表示にする
+.acdCheck:checked ~ .acdInner {
+display: none;
+}
+
+.acdInner {
+padding: 20px;
 &--menu {
 padding: 12px;
 }
+&.isHidden {
+display: none;
+}
+}
+
+.acdInner.isHidden {
+display: none;
 }
 
 /* --- menuList --- */
@@ -118,11 +160,5 @@ color: #666565;
 03. CategoryC
 ----------------------------------------------------------------- */
 
-//table初期設定
-.tableText.isHidden {
-	display: none;
-}
-.tr.isHidden {
-	display: none;
-}
+
 

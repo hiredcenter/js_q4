@@ -606,7 +606,7 @@ font-size: 11px;
 05. Modules
 ----------------------------------------------------------------- */
 /**
- * Button
+ * btn
  */
 /**
  * Form
@@ -620,7 +620,7 @@ font-size: 11px;
 /**
  * Text
  */
-.buttonArea {
+.btnWrapper {
 -webkit-box-pack: justify;
 display: flex;
 display: -ms-flexbox;
@@ -630,7 +630,7 @@ justify-content: space-between;
 width: 134px;
 }
 
-.button {
+.btn {
 align-items: center;
 -webkit-box-align: center;
 -webkit-box-pack: center;
@@ -644,19 +644,19 @@ justify-content: center;
 width: 38px;
 }
 
-.button--A {
+.btn--A {
 background-color: #00cd82;
 }
 
-.button--B {
+.btn--B {
 background-color: #00cdcb;
 }
 
-.button--C {
+.btn--C {
 background-color: #ef258e;
 }
 
-.button > a {
+.btn > a {
 align-items: center;
 -webkit-box-align: center;
 -webkit-box-pack: center;

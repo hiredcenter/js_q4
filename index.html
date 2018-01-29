@@ -25,11 +25,11 @@
 <main class="main">
 <div class="mainInner">
 <h2 class="mainTitle">jQueryでjsonデータをあつかってみる</h2>
-<div class="tableArea">
-<table border="1" class="table">
-<caption class="tableTitle" id="group">グループ：</caption>
+<div class="tblWrapper">
+<table border="1" class="tbl">
+<caption class="tblTitle" id="group">グループ：</caption>
 <thead>
-<tr>
+<tr class="trHead">
 <th>ID</th>
 <th>name</th>
 <th>age</th>
@@ -37,62 +37,37 @@
 </tr>
 </thead>
 <tbody id="output">
-<!-- <tr>
-<td>01</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>02</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>03</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>04</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>05</td>
-<td></td>
-<td></td>
-<td></td>
-</tr> -->
+<!-- jsの表データが入るエリア-->
 </tbody>
 </table>
-<!-- /.tableArea --></div>
+<!-- /.tblWrapper --></div>
 
-<div class="accordion">
-<h3 class="accordionTitle">group</h3>
-<div class="accordionInner">
-<div class="buttonArea">
-<div class="button button--A"><a href="#">A</a></div>
-<div class="button button--B"><a href="#">B</a></div>
-<div class="button button--C"><a href="#">C</a></div>
-<!-- /.buttonArea --></div>
-<!-- /.accordionInner --></div>
-<!-- /.accordion --></div>
+<div class="acd">
+<label class="acdLabel" for="checkBox01">groups</label>
+<input type="checkBox" class="acdCheck" name="acd" id="checkBox01">
+<span class="acdIcon"></span>
+<div class="acdInner acdInner--group">
+<div class="btnWrapper">
+<div class="btn btn--A"><a href="#">A</a></div>
+<div class="btn btn--B"><a href="#">B</a></div>
+<div class="btn btn--C"><a href="#">C</a></div>
+<!-- /.btnWrapper --></div>
+<!-- /.acdInner --></div>
+<!-- /.acd --></div>
 
-<div class="accordion">
-<h3 class="accordionTitle">menu</h3>
-<div class="accordionInner accordionInner--menu">
+<div class="acd">
+<label class="acdLabel" for="checkBox02">menu</label>
+<input type="checkBox" class="acdCheck" name="acd" id="checkBox02">
+<span class="acdIcon"></span>
+<div class="acdInner acdInner--menu">
 <ul class="menuList">
 <li class="menuListItem"><a href="#">home</a></li>
 <li class="menuListItem"><a href="#">news</a></li>
 <li class="menuListItem"><a href="#">blog</a></li>
 <li class="menuListItem"><a href="#">contact</a></li>
 <!-- /.menuList --></ul>
-<!-- /.accordionInner --></div>
-<!-- /.accordion --></div>
+<!-- /.acdInner --></div>
+<!-- /.acd --></div>
 
 <!-- /.mainInner --></div>
 </main>
