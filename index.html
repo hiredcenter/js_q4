@@ -9,18 +9,20 @@
 <link rel="stylesheet" href="./common/css/general.css">
 <link rel="stylesheet" href="./common/css/index.css">
 </head>
+
 <body>
 <header class="header">
 <h1 class="headerTitle"><img src="./common/img/ttl_common.png" alt="LESSON Q4"></h1>
 </header>
-<nav class="gNav">
+
+<nav>
 <ul class="gNavList">
 <li class="gNavListItem"><a href="#">home</a></li>
 <li class="gNavListItem"><a href="#">news</a></li>
 <li class="gNavListItem"><a href="#">blog</a></li>
 <li class="gNavListItem"><a href="#">contact</a></li>
 <!-- /.gNavList --></ul>
-<!-- /.gNav --></nav>
+</nav>
 
 <main class="main">
 <div class="mainInner">
@@ -37,7 +39,7 @@
 </tr>
 </thead>
 <tbody id="output">
-<!-- jsの表データが入るエリア-->
+<!-- underscore.jsのテンプレート挿入部 -->
 </tbody>
 </table>
 <!-- /.tblWrapper --></div>
@@ -46,11 +48,11 @@
 <label class="acdLabel" for="checkBox01">groups</label>
 <input type="checkBox" class="acdCheck" name="acd" id="checkBox01">
 <span class="acdIcon"></span>
-<div class="acdInner acdInner--group">
+<div class="acdInner acdInner-group">
 <div class="btnWrapper">
-<div class="btn btn--A"><a href="#">A</a></div>
-<div class="btn btn--B"><a href="#">B</a></div>
-<div class="btn btn--C"><a href="#">C</a></div>
+<div class="btn btn-A"><a href="#">A</a></div>
+<div class="btn btn-B"><a href="#">B</a></div>
+<div class="btn btn-C"><a href="#">C</a></div>
 <!-- /.btnWrapper --></div>
 <!-- /.acdInner --></div>
 <!-- /.acd --></div>
@@ -59,8 +61,8 @@
 <label class="acdLabel" for="checkBox02">menu</label>
 <input type="checkBox" class="acdCheck" name="acd" id="checkBox02">
 <span class="acdIcon"></span>
-<div class="acdInner acdInner--menu">
-<ul class="menuList">
+<div class="acdInner acdInner-menu">
+<ul>
 <li class="menuListItem"><a href="#">home</a></li>
 <li class="menuListItem"><a href="#">news</a></li>
 <li class="menuListItem"><a href="#">blog</a></li>
@@ -77,6 +79,17 @@
 <!-- /.footer --></footer>
 
 <script src="./common/js/jquery-1.11.1.min.js"></script>
+<script src="./common/js/underscore-min.js"></script>
 <script src="./common/js/common.js"></script>
 </body>
 </html>
+
+<!-- underscore.jsのテンプレート-->
+<script type="text/html" id="lodashTemplateData">
+<tr <%= group %> >
+<td><%= id %></td>
+<td><%= name %></td>
+<td><%= age %></td>
+<td><%= team %></td>
+</tr>
+</script>

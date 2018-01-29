@@ -1,9 +1,10 @@
 @charset "utf-8";
 
 /* ----------------------------------------------------------------
-*	01. CategoryA
-*	02. CategoryB
-*	03. CategoryC
+*	01. Main
+*	02. Global Navigation
+*	03. Table
+*	04. Accordion
 ----------------------------------------------------------------- */
 
 /* ----------------------------------------------------------------
@@ -13,12 +14,10 @@
 .main {
 padding-top: 30px;
 }
-
 .mainInner {
 margin: 0 auto;
 width: 760px;
 }
-
 .mainTitle {
 font-size: 24px;
 margin-bottom: 20px;
@@ -26,23 +25,19 @@ margin-bottom: 20px;
 
 
 /* ----------------------------------------------------------------
-01. Global Navigation
+02. Global Navigation
 ----------------------------------------------------------------- */
 
-.gNav {
-background-color: #ebe8e8;
-}
 .gNavList {
+background-color: #ebe8e8;
 display: flex;
 justify-content: space-between;
 }
-
 .gNavListItem {
 font-size: 18px;
 text-align: center;
 width: 200px;
 }
-
 .gNavListItem > a {
 align-items: center;
 color: #666565;
@@ -54,22 +49,21 @@ width: 100%;
 
 
 /* ----------------------------------------------------------------
-02. Table
+03. Table
 ----------------------------------------------------------------- */
 
 .tblWrapper {
 margin-bottom: 20px;
+}
+.tbl {
+border-color: #b3b3b3;
+width: 100%;
 }
 .tblTitle {
 font-size: 16px;
 margin-bottom: 10px;
 }
 
-/* --- table --- */
-.tbl {
-border-color: #b3b3b3;
-width: 100%;
-}
 .trHead > th {
 background-color: #cbcbcb;
 padding: 3px;
@@ -79,86 +73,58 @@ td {
 padding: 3px 10px;
 }
 
-//tbl初期設定
+/* --- table初期設定 --- */
 .tblText.isHidden {
 display: none;
 }
-.tr.isHidden {
+tbody > tr.isHidden {
 display: none;
 }
 
 
 /* ----------------------------------------------------------------
-03. Accordion
+04. Accordion
 ----------------------------------------------------------------- */
 
 .acd {
 border: solid 1px ;
 margin-bottom: 20px;
-position: relative; //▼の配置用に指定
+position: relative;
 }
-
 .acdLabel {
 cursor: pointer;
-display: block; //チェックボックスのクリック範囲拡大
+display: block;
 background-color: #ebe8e8;
 padding: 7px 12px;
 }
-
 .acdIcon {
-border: 13px solid transparent;
+border: 8px solid transparent;
 border-bottom: 15px solid #b3b3b3;
 display: block;
 height: 0;
 position: absolute;
 right: 10px;
-top: 0;
+top: 3px;
 width: 0;
 }
-
 .acdCheck {
 display: none;
 }
-
-//クリック時に▼の向きを変える
+/* --- クリック時に▼の向きを変える --- */
 .acdCheck:checked + .acdIcon {
 top: 12px;
 transform: rotateX(180deg);
 }
-//クリック時に中身を非表示にする
+/* --- クリック時に中身を非表示にする --- */
 .acdCheck:checked ~ .acdInner {
 display: none;
 }
-
 .acdInner {
+&-group {
 padding: 20px;
-&--menu {
+}
+&-menu {
 padding: 12px;
 }
-&.isHidden {
-display: none;
 }
-}
-
-.acdInner.isHidden {
-display: none;
-}
-
-/* --- menuList --- */
-// .menuList {
-// }
-.menuListItem {
-margin-bottom: 4px;
-}
-.menuListItem > a {
-color: #666565;
-}
-
-
-
-/* ----------------------------------------------------------------
-03. CategoryC
------------------------------------------------------------------ */
-
-
 
