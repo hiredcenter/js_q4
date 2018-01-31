@@ -64,7 +64,7 @@ font-size: 16px;
 margin-bottom: 10px;
 }
 
-.trHead > th {
+thead th {
 background-color: #cbcbcb;
 padding: 3px;
 text-align: center;
@@ -91,33 +91,20 @@ border: solid 1px ;
 margin-bottom: 20px;
 position: relative;
 }
-.acdLabel {
-cursor: pointer;
-display: block;
+.acdTitle {
 background-color: #ebe8e8;
 padding: 7px 12px;
 }
 .acdIcon {
 border: 8px solid transparent;
 border-bottom: 15px solid #b3b3b3;
+cursor: pointer;
 display: block;
 height: 0;
 position: absolute;
 right: 10px;
 top: 3px;
 width: 0;
-}
-.acdCheck {
-display: none;
-}
-/* --- クリック時に▼の向きを変える --- */
-.acdCheck:checked + .acdIcon {
-top: 12px;
-transform: rotateX(180deg);
-}
-/* --- クリック時に中身を非表示にする --- */
-.acdCheck:checked ~ .acdInner {
-display: none;
 }
 .acdInner {
 &-group {
@@ -128,3 +115,12 @@ padding: 12px;
 }
 }
 
+/* --- クリック時に▼の向きを変える --- */
+.acdIcon.is-active {
+top: 12px;
+transform: rotateX(180deg);
+}
+/* --- クリック時に中身を非表示にする --- */
+.acdInner.is-hidden {
+display: none;
+}
