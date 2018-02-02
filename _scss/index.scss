@@ -77,7 +77,10 @@ padding: 3px 10px;
 .tblText.isHidden {
 display: none;
 }
-tbody > tr.isHidden {
+// tbody > tr.isHidden {
+// display: none;
+// }
+tbody.isHidden {
 display: none;
 }
 
